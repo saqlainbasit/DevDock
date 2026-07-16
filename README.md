@@ -142,7 +142,7 @@ devdock/
 
 ## 👤 Author
 
-**Saqlain** — student developer building tools for developers.
+**Saqlain** 
 
 ---
 
