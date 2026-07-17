@@ -1,10 +1,8 @@
-# 🐳 DevDock
+## Prerequisites
 
-> A personal Docker environment manager — control your containers visually, without touching the CLI.
-
-![DevDock Dashboard](https://img.shields.io/badge/status-active-22c55e?style=flat-square)
-![Stack](https://img.shields.io/badge/stack-React%20%2B%20Node.js%20%2B%20Docker-3b82f6?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-a855f7?style=flat-square)
+- Node.js 18+
+- Docker Desktop (running)
+- Git
 
 ---
 
