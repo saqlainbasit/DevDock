@@ -137,13 +137,3 @@ devdock/
 - [ ] JWT-based authentication
 
 ---
-
-## 👤 Author
-
-**Saqlain** 
-
----
-
-## 📄 License
-
-MIT — free to use and modify.
