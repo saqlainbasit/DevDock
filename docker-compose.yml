@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  # ── Backend ─────────────────────────────────────────────────
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: devdock-server
+    ports:
+      - "5000:5000"
+    volumes:
+      # Mount Docker socket so server can talk to Docker Engine
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # ── Frontend ─────────────────────────────────────────────────
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: devdock-client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+    restart: unless-stopped
